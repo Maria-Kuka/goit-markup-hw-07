@@ -1,0 +1,33 @@
+
+.invitation{
+    margin-right: 90px;
+}
+.invite {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.invitation-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0;
+
+}
+
+.invitation-icon {
+    fill: #FFFFFF;
+
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+    }
+    
+}
+

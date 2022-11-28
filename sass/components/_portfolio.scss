@@ -1,0 +1,43 @@
+.page {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.port-nav-link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+
+    
+&.current {
+    color: #2196F3;
+}
+}
+
+
+.port-nav-link.current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+}
+
+.btn-port-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.style {
+    padding: 6px 25px;
+}
