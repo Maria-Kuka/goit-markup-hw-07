@@ -38,6 +38,7 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .list {
@@ -91,7 +92,7 @@ ul {
   color: var(--main-color);
 }
 
-.ocupation {
+.works__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -122,7 +123,7 @@ ul {
   background-color: var(--third-color);
 }
 
-.client {
+.clients {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
@@ -466,10 +467,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-color);
-}
-
-.overlay {
-  max-width: 1600 px;
   height: 600;
   margin-left: auto;
   margin-right: auto;
@@ -479,9 +476,6 @@ ul {
   background-position: center;
   background-color: #c4c4c4;
   background-repeat: no-repeat;
-}
-.hero .overlay {
-  max-width: 1600px;
 }
 
 .section--cuted {
@@ -551,7 +545,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.works {
+.works__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,16 +555,20 @@ ul {
   list-style: none;
 }
 
-.work__item {
+.works__item {
   padding: 0;
   margin: 0;
 }
 
-.wrapper {
+.works__wrapper {
   position: relative;
 }
 
-.overlay__box {
+.works__img {
+  display: block;
+}
+
+.works__overlay {
   position: absolute;
   height: 70px;
   left: 0;
@@ -578,7 +576,7 @@ ul {
   width: 100%;
 }
 
-.overlay__text {
+.works__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -596,7 +594,7 @@ ul {
   background-color: #F5F4FA;
 }
 
-.workers {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,14 +606,18 @@ ul {
   list-style: none;
 }
 
-.employees {
+.team__employees {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.employees:not(:last-child) {
+.team__employees:not(:last-child) {
   margin-right: 30px;
+}
+
+.team__items {
+  display: block;
 }
 
 .team__workers {
@@ -671,7 +673,7 @@ ul {
   border-radius: 50%;
 }
 
-.social__link {
+.team__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -692,7 +694,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__icon {
+.team__img {
   border: 0;
   width: 20px;
   height: 20 px;
@@ -704,7 +706,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social__link:hover .socials__icon, .social__link:focus .socials__icon {
+.team__link:hover .team__img, .team__link:focus .team__img {
   fill: #ffffff;
 }
 
@@ -712,14 +714,14 @@ ul {
   background-color: #2196F3;
 }
 
-.our__clients {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
 
-.clients__list {
+.clients__item {
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -742,16 +744,16 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   list-style: none;
 }
-.clients__list:hover, .clients__list:focus {
+.clients__item:hover, .clients__item:focus {
   border: 1px solid #2196F3;
   border-radius: 4px;
 }
 
-.clients__list:last-child {
+.clients__item:last-child {
   margin-right: 0;
 }
 
-.icon__client {
+.clients__icon {
   width: 170px;
   height: 92px;
   display: -webkit-box;
@@ -771,7 +773,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__icons {
+.clients__img {
   fill: #AFB1B8;
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -780,7 +782,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon__client:hover .client__icons, .icon__client:focus .client__icons {
+.clients__icon:hover .clients__img, .clients__icon:focus .clients__img {
   fill: #2196F3;
 }
 
@@ -1001,10 +1003,6 @@ ul {
 
 .style {
   padding: 6px 25px;
-}
-
-.gallery__items {
-  display: block;
 }
 
 .gallery-list {

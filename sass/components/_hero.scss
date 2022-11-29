@@ -10,10 +10,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--third-color);
-}
 
-.overlay {
-    max-width: 1600 px;
     height: 600;
     margin-left: auto;
     margin-right: auto;
@@ -21,14 +18,9 @@
     background-size: auto;
     background-position: center;
     background-color: #c4c4c4;
-    ;
     background-repeat: no-repeat;
-
-    .hero & {
-        max-width: 1600px;
-    }
-    
 }
+
 
 
 

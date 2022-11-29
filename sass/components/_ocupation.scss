@@ -1,19 +1,21 @@
-.works {
+.works__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.work__item {
+.works__item {
     padding: 0;
     margin: 0;
 }
 
-.wrapper {
+.works__wrapper {
     position: relative;
 }
-
-.overlay__box {
+.works__img {
+    display: block;
+}
+.works__overlay{
     position: absolute;
     height: 70px;
     left: 0;
@@ -21,7 +23,7 @@
     width: 100%;
 }
 
-.overlay__text {
+.works__text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
